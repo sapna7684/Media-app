@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { GoogleLogin } from 'react-google-login'
 import { useNavigate } from 'react-router-dom'
 import { FcGoogle } from 'react-icons/fc'
@@ -39,7 +39,7 @@ export const Login = () => {
 
         <div className="absolute flex flex-col justify-center items-center top-0 right-0 left-0 bottom-0    bg-blackOverlay">
           <div className="p-5">
-            <img src={logo} width="130px" />
+            <img src={logo} width="130px" alt="logo" />
           </div>
 
           <div className="shadow-2xl">
