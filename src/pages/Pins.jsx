@@ -3,11 +3,11 @@ import {Routes, Route} from 'react-router-dom'
 import { Navbar,Search, PinDetails, CreatePin, Feed } from '../components'
 
 export const Pins = ({user}) => {
-  const [searchTearm, setSearchTearm] = useState('')
+  const [searchTerm, setSearchTerm] = useState('')
   return (
     <div className='px-2 md:px-5'>
        <div className="bg-gray-50">
-         <Navbar searchTearm={searchTearm} setSearchTearm={setSearchTearm} user={user}/> 
+         <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} user={user}/> 
        </div>
        <div className="h-full">
          <Routes>
@@ -15,7 +15,7 @@ export const Pins = ({user}) => {
            <Route path='/category/:categoryId' element={<Feed/>} />
            <Route path='/pin-detail/:pinId' element={<PinDetails user={user} />} />
            <Route path='/create-pin' element={<CreatePin user={user} />} />
-           <Route path='/search' element={<Search searchTearm={searchTearm} setSearchTearm={setSearchTearm}/>} />
+           <Route path='/search' element={<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>} />
          </Routes>
        </div>
     </div>

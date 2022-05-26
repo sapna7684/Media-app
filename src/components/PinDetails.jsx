@@ -32,7 +32,7 @@ export const PinDetails = ({ user }) => {
   }
   useEffect(() => {
     fetchPinDetails();
-  }, [pinId, fetchPinDetails])
+  }, [pinId])
 
   if (!pinDetail) return <Spinner message="Loading pin..." />
 
