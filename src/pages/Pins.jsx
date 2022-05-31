@@ -9,7 +9,7 @@ export const Pins = ({user}) => {
        <div className="bg-gray-50">
          <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} user={user}/> 
        </div>
-       <div className="h-full">
+       <div className="h-full bg-gray-50">
          <Routes>
            <Route path='/' element={<Feed/>} />
            <Route path='/category/:categoryId' element={<Feed/>} />
