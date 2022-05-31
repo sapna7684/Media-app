@@ -5,7 +5,8 @@ import { FcGoogle } from 'react-icons/fc'
 import shareVideo from '../assets/share.mp4'
 import logo from '../assets/logowhite.png'
 import { client } from '../Client'
-// import {gapi} from 'gapi-script'
+    // eslint-disable-next-line
+import {gapi} from 'gapi-script'
 
 
 export const Login = () => {
